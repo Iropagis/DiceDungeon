@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Combat Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Dice Combat Game</h1>
+        <div id="hero-stats">
+            <p>Hero HP: <span id="hero-hp"></span></p>
+            <div id="hero-health-bar" class="health-bar"></div>
+        </div>
+        <div id="monster-stats">
+            <p>Monster: <span id="monster-name"></span> HP: <span id="monster-hp"></span></p>
+            <div id="monster-health-bar" class="health-bar"></div>
+        </div>
+        <div id="dice-selection">
+            <p>Select a dice:</p>
+            <div id="dice-container"></div>
+        </div>
+        <div id="action-result"></div>
+        <button onclick="nextTurn()">Next Turn</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
